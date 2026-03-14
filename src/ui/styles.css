@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --default-font-family: 'Almarai', system-ui, -apple-system, sans-serif;
+  --color-background: #1a1918;
+  --color-foreground: #f0ece1;
+  --color-card: #141312;
+  --color-card-foreground: #f0ece1;
+  --color-popover: #1a1918;
+  --color-popover-foreground: #f0ece1;
+  --color-primary: #f0ece1;
+  --color-primary-foreground: #1a1918;
+  --color-secondary: rgba(240, 236, 225, 0.05);
+  --color-secondary-foreground: #f0ece1;
+  --color-muted: rgba(240, 236, 225, 0.05);
+  --color-muted-foreground: rgba(240, 236, 225, 0.5);
+  --color-accent: rgba(240, 236, 225, 0.05);
+  --color-accent-foreground: #f0ece1;
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-border: rgba(240, 236, 225, 0.1);
+  --color-input: rgba(240, 236, 225, 0.1);
+  --color-ring: rgba(240, 236, 225, 0.3);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-size: 13px;
+  }
+}
+
+*, *::before, *::after, body, html {
+  font-family: 'Almarai', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Custom scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(240, 236, 225, 0.15) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(240, 236, 225, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 236, 225, 0.25);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
