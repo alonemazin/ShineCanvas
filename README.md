@@ -1,7 +1,7 @@
 # ShineCanvas
 
 <p align="center">
-  <img src="https://github.com/alonemazin/ShineCanvas/blob/master/docs/shinecanvas-banner.png?raw=true" alt="ShineCanvas Banner" width="600">
+  <img src="https://github.com/alonemazin/ShineCanvas/blob/master/docs/shinecanvas-banner.png?raw=true" alt="ShineCanvas Banner" width="900">
 </p>
 
 This project aims to create a Figma plugin that converts Figma frames and elements into Canvas drawing code, targeting both HTML5 Canvas APIs (for web pages) and [Node Canvas](https://github.com/Automattic/node-canvas) for server-side rendering in Node.js. The focus is on generating pixel-perfect, 1:1 Canvas code that matches your Figma designs, whether you want to render graphics in the browser or on the server.
